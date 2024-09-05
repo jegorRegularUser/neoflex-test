@@ -1,42 +1,45 @@
+import AppleBYZS852I from '../../assets/png/Apple BYZ S852I.png'
+import AppleEarpods from '../../assets/png/Apple Earpods.png'
+import AppleEarpodsClose from '../../assets/png/Apple Earpodsclose.png'
 const headphones = [
     {
         id: 1,
-        img: '../../assets/png/Apple BYZ S852I.png',
+        img: AppleBYZS852I,
         title: 'Apple BYZ S852I',
         price: 2927,
         rate: 4.7,
     },
     {
         id: 2,
-        img: '../../assets/png/Apple Earpods.png',
+        img: AppleEarpods,
         title: 'Apple Earpods',
         price: 2327,
         rate: 4.5,
     },
     {
         id: 3,
-        img: './assets/png/Apple Earpods(close).png',
+        img: AppleEarpodsClose,
         title: 'Apple Earpods',
         price: 2327,
         rate: 4.5,
     },
     {
         id: 4,
-        img: './assets/png/Apple BYZ S852I.png',
+        img: AppleBYZS852I,
         title: 'Apple BYZ S852I',
         price: 2927,
         rate: 4.7,
     },
     {
         id: 5,
-        img: './assets/png/Apple Earpods.png',
+        img: AppleEarpods,
         title: 'Apple Earpods',
         price: 2327,
         rate: 4.5,
     },
     {
         id: 6,
-        img: './assets/png/Apple Earpods(close).png',
+        img: AppleEarpodsClose,
         title: 'Apple Earpods',
         price: 2327,
         rate: 4.5,
