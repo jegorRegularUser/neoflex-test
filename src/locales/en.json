@@ -1,0 +1,17 @@
+{
+    "main": {
+    "headphones": "Headphones",
+    "wireless": "Wireless headphones",
+    "buy": "buy"
+    },
+    "footer": {
+        "favorite": "Favorite",
+        "cart": "Cart",
+        "contacts": "Contacts",
+        "terms": "Terms of service"
+    },
+    "cart":{
+        "cart": "Cart",
+        "go": "Go to checkout"
+    }
+}
