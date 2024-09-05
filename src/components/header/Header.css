@@ -1,0 +1,29 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 10%;
+}
+.header .links{
+    width: 10%;
+    display: flex;
+    align-items: center;
+    gap: 45px;
+    position: relative;
+}
+.header .link{
+    position: relative;
+}
+.header .count{
+position: absolute;
+top: -8px;
+right: -10px;
+font-size: 11px;
+width: 17px;
+height: 17px;
+display: flex;
+align-items: center;
+justify-content: center;
+color: white;
+background-color: var(--orange-font);
+border-radius: 50%;
+}

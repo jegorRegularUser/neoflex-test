@@ -1,0 +1,39 @@
+.footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #ffffff;
+    margin: auto 10% 0;
+    border-radius: 30px 30px 0 0;
+    min-width: 80%;
+}
+.footer.fixed{
+    position: fixed;
+    bottom: 0;
+}
+.footer .links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.footer .lang{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.footer .lang-swapper{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.footer .lang-swapper button {
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    border: none;
+    cursor: pointer;
+}
+.footer .social{
+    display: flex;
+    gap: 17px;
+}
