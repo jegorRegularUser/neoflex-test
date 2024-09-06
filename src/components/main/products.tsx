@@ -81,7 +81,7 @@ const wirelessHeadphones:product[] = [
     priceBeforeDiscount: 3527,
   },
   {
-    id: 7,
+    id: 8,
     img: GERLAX_GH_04,
     title: "GERLAX GH-04",
     price: 6527,
@@ -90,7 +90,7 @@ const wirelessHeadphones:product[] = [
     priceBeforeDiscount: 3527,
   }, 
   {
-    id: 7,
+    id: 9,
     img: BOROFONE_BO4,
     title: "BOROFONE BO4",
     price: 7527,

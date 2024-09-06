@@ -11,7 +11,7 @@ const Product = ({ product }: {product:product}) => {
   const cartContext = useContext(CartContext);
   const handleAddToCart = () => {
     if (cartContext) {
-      cartContext.addToCart({ id, name: title, price }); 
+      cartContext.addToCart({ id, img, title, price, quantity: 0 }); 
     }
   };
   return (

@@ -11,7 +11,7 @@
 .cart .list-payment {
     display: flex;
     justify-content: space-between;
-
+    align-items: flex-start;
 }
 
 .cart .list {
@@ -30,7 +30,7 @@
 .cart .payment .text {
     display: flex;
     justify-content: space-between;
-    margin: 15px 21px ;
+    margin: 15px 21px;
 }
 
 .cart .payment-btn {
