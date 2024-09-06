@@ -1,0 +1,42 @@
+.cart {
+    padding: 0 10%;
+}
+
+.cart h1 {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 28px 0 20px;
+}
+
+.cart .list-payment {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.cart .list {
+    width: 55%;
+}
+
+.cart .payment {
+    width: 30%;
+    border-radius: 30px;
+    background-color: white;
+    font-weight: 600;
+    text-transform: uppercase;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+}
+
+.cart .payment .text {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 21px ;
+}
+
+.cart .payment-btn {
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    padding: 22px 15px;
+    width: 100%;
+}

@@ -12,12 +12,14 @@ function App() {
   return (
     <BrowserRouter>
       <CartProvider>
+        <div className="App"> 
         <Header />
         <Routes>
           <Route path="/" element={<Catalog />} />
           <Route path="/cart" element={<Cart />} />
         </Routes>
         <Footer/>
+        </div>
       </CartProvider>
     </BrowserRouter>
   );

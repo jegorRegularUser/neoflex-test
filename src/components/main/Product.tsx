@@ -1,15 +1,19 @@
 import { useTranslation } from "react-i18next";
 import "./product.css";
-interface ProductProps {
-  id: number;
-  img: string;
-  title: string;
-  price: number;
-  rate: number;
-}
+import SvgIcon from "../../assets/svg/SvgIcon";
+import { product } from "./products";
+import { CartContext } from "../../store/CartContext";
+import { useContext } from "react";
 
-const Product = ({ id, img, title, price, rate }: ProductProps) => {
+const Product = ({ product }: {product:product}) => {
+  const {id, title, img, rate, price, priceBeforeDiscount,isDiscount } = product;
   const { t } = useTranslation();
+  const cartContext = useContext(CartContext);
+  const handleAddToCart = () => {
+    if (cartContext) {
+      cartContext.addToCart({ id, name: title, price }); 
+    }
+  };
   return (
     <div className="product" key={id}>
       <div className="product-image">
@@ -18,11 +22,17 @@ const Product = ({ id, img, title, price, rate }: ProductProps) => {
       <div className="product-info">
         <div className="product-info-wrap">
           <div className="product-title">{title}</div>
-          <div className="product-rating">{rate}</div>
+          <div className="product-rating">
+            <SvgIcon icon="star" width={23} height={23} />
+            {rate}
+          </div>
         </div>
         <div className="product-info-wrap">
-          <div className="product-price">${price}</div>
-          <button className="product-button">{t("main.buy")}</button>
+          <div className="product-price">{price} ₽</div>
+          {isDiscount && (
+            <div className="product-price-discount">{priceBeforeDiscount} ₽</div>
+          )}
+          <button className="product-button" onClick={handleAddToCart}>{t("main.buy")}</button>
         </div>
       </div>
     </div>

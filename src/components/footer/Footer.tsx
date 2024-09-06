@@ -2,22 +2,16 @@ import { Link } from "react-router-dom";
 import SvgIcon from "../../assets/svg/SvgIcon";
 import { useTranslation } from "react-i18next";
 import "./footer.css";
-import { useEffect, useState } from "react";
 import i18n from "../../i18n";
 export default function Footer() {
   const { t } = useTranslation();
-  const [isFixed, setIsFixed] = useState(false);
   const changeLan = (lan: string) => {
     i18n.changeLanguage(lan);
   };
-  useEffect(() => {
-    const contentHeight = document.body.scrollHeight;
-    const windowHeight = window.innerHeight;
-    setIsFixed(contentHeight <= windowHeight);
-  }, []);
+
 
   return (
-    <div className={isFixed ? "footer fixed" : "footer"}>
+    <div className="footer">
       <Link to="/">
         <SvgIcon icon="logo" width={85} height={30} />
       </Link>

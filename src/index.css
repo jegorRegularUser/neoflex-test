@@ -17,3 +17,11 @@ body {
   min-width: 320px;
   min-height: 100vh;
 }
+
+button{
+  background: none;
+  font-family: Montserrat, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  border: none;
+  font-size: 17px;
+  font-weight: 600;
+}

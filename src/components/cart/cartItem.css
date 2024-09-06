@@ -1,0 +1,14 @@
+.cart-item {
+    background-color: white;
+    position: relative;
+    width: 100%;
+    border-radius: 30px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+
+}
+
+.cart-item .delete-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
