@@ -49,7 +49,7 @@
 
 .product-price-discount {
     position: absolute;
-    color: var(--orange-font-discount);
+    color: var(--pale-orange-font);
     right: 5px;
     top: 15px;
     font-size: 13px;
@@ -69,4 +69,8 @@
     cursor: pointer;
     align-self: flex-end;
 
+}
+.product-button:hover {
+    color: var(--pale-orange-font);
+    transition: all 0.2s ease;
 }

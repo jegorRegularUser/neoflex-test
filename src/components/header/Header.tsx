@@ -1,13 +1,28 @@
 import { Link } from "react-router-dom";
 import SvgIcon from "../../assets/svg/SvgIcon";
 import "./Header.css";
-import { useContext } from "react";
+import { useContext, useEffect, useState } from "react";
 import { CartContext } from "../../store/CartContext";
+
 export default function Header() {
   const cartContext = useContext(CartContext);
 
-  const  cartItems  = cartContext?.cartItems;
+  const  cartItemsQuantity  = cartContext?.cartItemsQuantity;
 
+  const [isJumping, setIsJumping] = useState(false);
+
+  useEffect(() => {
+    if (cartItemsQuantity !== 0) {
+      setIsJumping(true);
+
+      const timeoutId = setTimeout(() => {
+        setIsJumping(false);
+      }, 300);
+
+      return () => clearTimeout(timeoutId);
+    }
+  }, [cartItemsQuantity]);
+  
   return (
     <div className="header">
       <Link to="/">
@@ -20,7 +35,7 @@ export default function Header() {
         </Link>
         <Link className="link" to="/cart">
           <SvgIcon icon="cart" />
-          {cartItems?.length!==0 && <span className="count">{cartItems?.length}</span>}
+          {cartItemsQuantity!==0 && <span className={`count ${isJumping ? 'jumping' : ''}`}>{cartItemsQuantity}</span>}
         </Link>
       </div>
     </div>

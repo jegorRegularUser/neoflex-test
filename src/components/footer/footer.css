@@ -1,5 +1,6 @@
-.footer{
+.footer {
     display: flex;
+
     justify-content: space-between;
     padding: 20px;
     background-color: #ffffff;
@@ -9,35 +10,52 @@
     min-width: 80%;
     align-self: flex-end;
 }
-.footer.fixed{
+
+.footer.fixed {
     position: fixed;
     bottom: 0;
     left: 0;
     right: 0;
 }
+
 .footer .links {
     display: flex;
     flex-direction: column;
     gap: 10px;
+
 }
-.footer .lang{
+
+.footer .link:hover {
+    color: var(--pale-orange-font);
+    transition: all 0.2s ease;
+}
+
+.footer .lang {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
-.footer .lang-swapper{
+
+.footer .lang-swapper {
     display: flex;
     align-items: center;
     gap: 15px;
 }
+
 .footer .lang-swapper button {
     padding: 5px;
     border-radius: 5px;
     background-color: #ffffff;
     border: none;
     cursor: pointer;
+    transition: all 0.2s ease;
 }
-.footer .social{
+
+.footer .lang-swapper button:hover {
+    color: var(--pale-orange-font) !important;
+}
+
+.footer .social {
     display: flex;
     gap: 17px;
 }

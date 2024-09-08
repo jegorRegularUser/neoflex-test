@@ -3,12 +3,12 @@ import SvgIcon from "../../assets/svg/SvgIcon";
 import { useTranslation } from "react-i18next";
 import "./footer.css";
 import i18n from "../../i18n";
+
 export default function Footer() {
   const { t } = useTranslation();
   const changeLan = (lan: string) => {
     i18n.changeLanguage(lan);
   };
-
 
   return (
     <div className="footer">
@@ -16,12 +16,20 @@ export default function Footer() {
         <SvgIcon icon="logo" width={85} height={30} />
       </Link>
       <div className="links">
-        <span>{t("footer.favorite")}</span>
-        <span>{t("footer.cart")}</span>
-        <span>{t("footer.contacts")}</span>
+        <Link to="/">
+          <span className="link">{t("footer.favorite")}</span>
+        </Link>
+        <Link to="/">
+          <span className="link">{t("footer.cart")}</span>
+        </Link>
+        <Link to="/">
+          <span className="link">{t("footer.contacts")}</span>
+        </Link>
       </div>
       <div className="lang">
-        <span>{t("footer.terms")}</span>
+        <Link to="/">
+          <span className="link">{t("footer.terms")}</span>
+        </Link>
         <div className="lang-swapper">
           <SvgIcon icon="lang" />
           <button
@@ -49,9 +57,15 @@ export default function Footer() {
         </div>
       </div>
       <div className="social">
-        <SvgIcon icon="vk" width={30} height={30} />
-        <SvgIcon icon="telegram" width={30} height={30} />
-        <SvgIcon icon="whatsapp" width={30} height={30} />
+        <a href="https://vk.com">
+          <SvgIcon icon="vk" width={30} height={30} />
+        </a>
+        <a href="https://vk.com">
+          <SvgIcon icon="telegram" width={30} height={30} />
+        </a>
+        <a href="https://vk.com">
+          <SvgIcon icon="whatsapp" width={30} height={30} />
+        </a>
       </div>
     </div>
   );

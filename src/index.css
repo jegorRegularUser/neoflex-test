@@ -4,10 +4,11 @@
   font-weight: 400;
   font-size: 17px;
 
-  --gray-background: #EAEAEA;
+  --gray-background: rgb(234, 234, 234);
+  --gray-background-7: rgba(234, 234, 234, 0.7);
   --gray-font: #838383;
   --orange-font: #FFA542;
-  --orange-font-discount: #FFCE7F;
+  --pale-orange-font: #FFCE7F;
 
 }
 
@@ -16,6 +17,7 @@ body {
   margin: 0;
   min-width: 320px;
   min-height: 100vh;
+
 }
 
 button{
@@ -24,4 +26,8 @@ button{
   border: none;
   font-size: 17px;
   font-weight: 600;
+}
+a{
+  text-decoration: none;
+  color: black
 }

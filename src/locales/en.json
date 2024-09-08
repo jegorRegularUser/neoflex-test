@@ -13,6 +13,7 @@
     "cart":{
         "cart": "Cart",
         "total": "Total",
-        "go": "Go to checkout"
+        "go": "Go to checkout",
+        "there": "There's nothing here yet"
     }
 }

@@ -14,7 +14,7 @@ export default function Cart() {
   return (
     <div className="cart">
       <h1>{t("cart.cart")}</h1>
-      <div className="list-payment">
+     {cartContext?.cartItems.length===0? t('cart.there'):<div className="list-payment">
         <div className="list">
           {cartContext?.cartItems.map(item => (
             <CartItem key={item.id} item={item} />
@@ -28,6 +28,7 @@ export default function Cart() {
           <button className="payment-btn">{t('cart.go')}</button>
         </div>
       </div>
+      }
     </div>
   );
 }

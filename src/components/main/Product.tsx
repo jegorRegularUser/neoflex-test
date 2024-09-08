@@ -5,13 +5,14 @@ import { product } from "./products";
 import { CartContext } from "../../store/CartContext";
 import { useContext } from "react";
 
-const Product = ({ product }: {product:product}) => {
-  const {id, title, img, rate, price, priceBeforeDiscount,isDiscount } = product;
+export default function Product({ product }: { product: product }) {
+  const { id, title, img, rate, price, priceBeforeDiscount, isDiscount } =
+    product;
   const { t } = useTranslation();
   const cartContext = useContext(CartContext);
   const handleAddToCart = () => {
     if (cartContext) {
-      cartContext.addToCart({ id, img, title, price, quantity: 0 }); 
+      cartContext.addToCart({ id, img, title, price, quantity: 0 });
     }
   };
   return (
@@ -30,13 +31,15 @@ const Product = ({ product }: {product:product}) => {
         <div className="product-info-wrap">
           <div className="product-price">{price} ₽</div>
           {isDiscount && (
-            <div className="product-price-discount">{priceBeforeDiscount} ₽</div>
+            <div className="product-price-discount">
+              {priceBeforeDiscount} ₽
+            </div>
           )}
-          <button className="product-button" onClick={handleAddToCart}>{t("main.buy")}</button>
+          <button className="product-button" onClick={handleAddToCart}>
+            {t("main.buy")}
+          </button>
         </div>
       </div>
     </div>
   );
-};
-
-export default Product;
+}

@@ -39,7 +39,7 @@ export default function CartItem({ item }: CartItemProps) {
             <SvgIcon icon="inc" width={25} height={25} />
           </button>
         </div>
-        <span className="total-price">{item.price} ₽</span>
+        <span className="total-price">{item.price*item.quantity} ₽</span>
       </div>
       <button className="delete-btn" onClick={deleteHandler}>
         <SvgIcon icon="delete" />
