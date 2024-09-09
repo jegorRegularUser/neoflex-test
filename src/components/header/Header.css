@@ -1,20 +1,29 @@
+@media (min-width:481px){
+    .header {
+        padding: 1rem 10%;
+    }
+}
+@media (max-width:480px){
+    .header {
+        padding: 1rem 5%;
+    }
+}
 .header {
     display: flex;
     justify-content: space-between;
-    padding: 1rem 10%;
     position: fixed;
-    box-sizing: border-box;
+    
     min-width: 100vw;
     background-color: var(--gray-background-7);
     z-index: 3;
 }
 
 .header .links {
-    width: 10%;
+    width: max-content;
     display: flex;
     align-items: center;
-    gap: 45px;
     position: relative;
+    gap: 45px;
 }
 
 .header .link {

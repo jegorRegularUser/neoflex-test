@@ -11,7 +11,9 @@
   --pale-orange-font: #FFCE7F;
 
 }
-
+* {
+  box-sizing: border-box;
+}
 body {
   background-color: var(--gray-background);
   margin: 0;

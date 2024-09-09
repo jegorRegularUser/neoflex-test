@@ -21,24 +21,19 @@ export default function Product({ product }: { product: product }) {
         <img src={img} alt={title} />
       </div>
       <div className="product-info">
-        <div className="product-info-wrap">
-          <div className="product-title">{title}</div>
-          <div className="product-rating">
-            <SvgIcon icon="star" width={23} height={23} />
-            {rate}
-          </div>
+        <div className="product-title">{title}</div>
+
+        <div className="product-price">{price} ₽</div>
+        {isDiscount && (
+          <div className="product-price-discount">{priceBeforeDiscount} ₽</div>
+        )}
+        <div className="product-rating">
+          <SvgIcon icon="star" width={23} height={23} />
+          {rate}
         </div>
-        <div className="product-info-wrap">
-          <div className="product-price">{price} ₽</div>
-          {isDiscount && (
-            <div className="product-price-discount">
-              {priceBeforeDiscount} ₽
-            </div>
-          )}
-          <button className="product-button" onClick={handleAddToCart}>
-            {t("main.buy")}
-          </button>
-        </div>
+        <button className="product-button" onClick={handleAddToCart}>
+          {t("main.buy")}
+        </button>
       </div>
     </div>
   );

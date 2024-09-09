@@ -1,5 +1,30 @@
+@media (min-width:769px) {
+    .cart .list {
+        width: 55%;
+    }
+
+    .cart .payment {
+        width: 30%;
+    }
+}
+
+@media (max-width:768px) {
+    .cart .list-payment {
+        flex-direction: column;
+    }
+
+    .cart .list {
+        width: 100%;
+    }
+
+    .cart .payment {
+        width: 100%;
+    }
+}
+
 .cart {
     padding: 0 10%;
+    margin-bottom: 20px;
 }
 
 .cart h1 {
@@ -15,11 +40,10 @@
 }
 
 .cart .list {
-    width: 55%;
+    margin-bottom: 20px;
 }
 
 .cart .payment {
-    width: 30%;
     border-radius: 30px;
     background-color: white;
     font-weight: 600;
