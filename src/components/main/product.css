@@ -28,6 +28,7 @@
 }
 
 .product {
+    position: relative;
     background-color: white;
     display: flex;
     flex-direction: column;
@@ -94,4 +95,8 @@
     transition: all 0.2s ease;
 }
 
-
+.expand-btn{
+    position: absolute;
+    right: 15px;
+    cursor: pointer;
+}

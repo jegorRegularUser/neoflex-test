@@ -6,6 +6,7 @@ import Cart from "./components/cart/Cart";
 import Header from "./components/header/Header";
 import Footer from "./components/footer/Footer";
 import "./i18n";
+import Payment from "./components/payment/Payment";
 function App() {
   return (
     <BrowserRouter>

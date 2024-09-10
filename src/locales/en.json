@@ -1,19 +1,29 @@
 {
-    "main": {
+  "main": {
     "headphones": "Headphones",
     "wireless": "Wireless headphones",
     "buy": "Buy"
-    },
-    "footer": {
-        "favorite": "Favorite",
-        "cart": "Cart",
-        "contacts": "Contacts",
-        "terms": "Terms of service"
-    },
-    "cart":{
-        "cart": "Cart",
-        "total": "Total",
-        "go": "Go to checkout",
-        "there": "There's nothing here yet"
-    }
+  },
+  "footer": {
+    "favorite": "Favorite",
+    "cart": "Cart",
+    "contacts": "Contacts",
+    "terms": "Terms of service"
+  },
+  "cart": {
+    "cart": "Cart",
+    "total": "Total",
+    "go": "Go to checkout",
+    "there": "There's nothing here yet"
+  },
+  "payment": {
+    "payment": "Payment",
+    "amount": "Amount",
+    "number": "Card Number",
+    "month": "Month",
+    "year": "Year",
+    "cvv": "CVV",
+    "pay": "Pay",
+    "sorry": "Sorry, try again"
+  }
 }

@@ -1,0 +1,61 @@
+.payment {
+  padding: 0 10%;
+  margin-bottom: 20px;
+
+}
+
+.payment h1 {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 28px 0 20px;
+}
+
+.payment .input-field {
+  margin-bottom: 16px;
+}
+
+.payment .input-label {}
+
+.payment .input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid var(--gray-background);
+  border-radius: 4px;
+  margin-top: 5px;
+
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.payment .input:focus {
+  border: 1px solid var(--gray-font);
+}
+
+.payment .submit-button {
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+  padding: 22px 15px;
+  width: 100%;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.payment .submit-button:hover {
+  background-color: #333;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+
+.payment .input-field-small {
+  display: flex;
+  gap: 40px;
+}
+
+.payment .input-field-dates {
+  display: flex;
+  width: 70%;
+  gap: 10px;
+}

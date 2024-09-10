@@ -1,4 +1,4 @@
-@media (min-width:481px){
+@media (min-width:577px){
     .footer {
         margin: auto 10% 0;
         min-width: 80%;
@@ -10,7 +10,7 @@
         gap: 17px;
     }
 }
-@media (max-width:480px){
+@media (max-width:576px){
     .footer {
         margin: auto 0 0;    
         min-width: 100%;

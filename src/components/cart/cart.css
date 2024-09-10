@@ -43,7 +43,7 @@
     margin-bottom: 20px;
 }
 
-.cart .payment {
+.cart .cart-payment {
     border-radius: 30px;
     background-color: white;
     font-weight: 600;
@@ -51,13 +51,13 @@
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
 }
 
-.cart .payment .text {
+.cart .cart-payment .text {
     display: flex;
     justify-content: space-between;
     margin: 15px 21px;
 }
 
-.cart .payment-btn {
+.cart-payment .payment-btn {
     background-color: black;
     color: white;
     border-radius: 20px;
