@@ -60,7 +60,7 @@ export default function Payment({ onPay }: { onPay: () => void }) {
             </div>
             <div className="input-field">
               <label htmlFor="date" className="input-label">
-                {t("payment.date")}
+                {t("payment.month")}
               </label>
               <input
                 type="text"

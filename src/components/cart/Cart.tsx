@@ -3,7 +3,6 @@ import { CartContext } from "../../store/CartContext";
 import { useContext, useState } from "react";
 import CartItem from "./CartItem";
 import "./cart.css";
-import { Link } from "react-router-dom";
 import Payment from "../payment/Payment";
 import Modal from "../modal/Modal";
 
@@ -34,7 +33,7 @@ export default function Cart() {
             <div className="cart-payment">
               <div className="text">
                 <span>{t("cart.total")}</span>
-                <span>₽ {totalPrice}</span>
+                <span>{totalPrice} ₽</span>
               </div>
               <button className="payment-btn" onClick={toggleModal}>
                 {t("cart.go")}

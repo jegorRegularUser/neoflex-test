@@ -7,14 +7,16 @@ import BOROFONE_BO4 from "../../assets/png/BOROFONE BO4.png";
 export interface product {
   id: number;
   img: string;
-  title:string;
+  title: string;
   price: number;
   rate: number;
   isDiscount: boolean;
   priceBeforeDiscount: number;
+  description: string;
+  features: { feature: string[]; featureDescription: string[] };
 }
 
-const headphones:product[] = [
+const headphones: product[] = [
   {
     id: 1,
     img: AppleBYZS852I,
@@ -23,6 +25,12 @@ const headphones:product[] = [
     rate: 4.7,
     isDiscount: true,
     priceBeforeDiscount: 3527,
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas lacinia tristique nisi a elementum. Morbi cursus non lectus in pretium. ",
+    features: {
+      feature: ["Lorem ipsum", "Lorem ipsum"],
+      featureDescription: ["Lorem ipsum", "Lorem ipsum"],
+    },
   },
   {
     id: 2,
@@ -32,6 +40,12 @@ const headphones:product[] = [
     rate: 4.5,
     isDiscount: false,
     priceBeforeDiscount: 3527,
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas lacinia tristique nisi a elementum. Morbi cursus non lectus in pretium. ",
+    features: {
+      feature: ["Lorem ipsum", "Lorem ipsum"],
+      featureDescription: ["Lorem ipsum", "Lorem ipsum"],
+    },
   },
   {
     id: 3,
@@ -41,6 +55,12 @@ const headphones:product[] = [
     rate: 4.5,
     isDiscount: false,
     priceBeforeDiscount: 3527,
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas lacinia tristique nisi a elementum. Morbi cursus non lectus in pretium. ",
+    features: {
+      feature: ["Lorem ipsum", "Lorem ipsum"],
+      featureDescription: ["Lorem ipsum", "Lorem ipsum"],
+    },
   },
   {
     id: 4,
@@ -50,6 +70,12 @@ const headphones:product[] = [
     rate: 4.7,
     isDiscount: false,
     priceBeforeDiscount: 3527,
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas lacinia tristique nisi a elementum. Morbi cursus non lectus in pretium. ",
+    features: {
+      feature: ["Lorem ipsum", "Lorem ipsum"],
+      featureDescription: ["Lorem ipsum", "Lorem ipsum"],
+    },
   },
   {
     id: 5,
@@ -59,6 +85,12 @@ const headphones:product[] = [
     rate: 4.5,
     isDiscount: false,
     priceBeforeDiscount: 3527,
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas lacinia tristique nisi a elementum. Morbi cursus non lectus in pretium. ",
+    features: {
+      feature: ["Lorem ipsum", "Lorem ipsum"],
+      featureDescription: ["Lorem ipsum", "Lorem ipsum"],
+    },
   },
   {
     id: 6,
@@ -68,9 +100,15 @@ const headphones:product[] = [
     rate: 4.5,
     isDiscount: false,
     priceBeforeDiscount: 3527,
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas lacinia tristique nisi a elementum. Morbi cursus non lectus in pretium. ",
+    features: {
+      feature: ["Lorem ipsum", "Lorem ipsum"],
+      featureDescription: ["Lorem ipsum", "Lorem ipsum"],
+    },
   },
 ];
-const wirelessHeadphones:product[] = [
+const wirelessHeadphones: product[] = [
   {
     id: 7,
     img: AppleAirPods,
@@ -79,6 +117,12 @@ const wirelessHeadphones:product[] = [
     rate: 4.7,
     isDiscount: false,
     priceBeforeDiscount: 3527,
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas lacinia tristique nisi a elementum. Morbi cursus non lectus in pretium. ",
+    features: {
+      feature: ["Lorem ipsum", "Lorem ipsum"],
+      featureDescription: ["Lorem ipsum", "Lorem ipsum"],
+    },
   },
   {
     id: 8,
@@ -88,7 +132,13 @@ const wirelessHeadphones:product[] = [
     rate: 4.7,
     isDiscount: false,
     priceBeforeDiscount: 3527,
-  }, 
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas lacinia tristique nisi a elementum. Morbi cursus non lectus in pretium. ",
+    features: {
+      feature: ["Lorem ipsum", "Lorem ipsum"],
+      featureDescription: ["Lorem ipsum", "Lorem ipsum"],
+    },
+  },
   {
     id: 9,
     img: BOROFONE_BO4,
@@ -97,6 +147,12 @@ const wirelessHeadphones:product[] = [
     rate: 4.7,
     isDiscount: false,
     priceBeforeDiscount: 3527,
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas lacinia tristique nisi a elementum. Morbi cursus non lectus in pretium. ",
+    features: {
+      feature: ["Lorem ipsum", "Lorem ipsum"],
+      featureDescription: ["Lorem ipsum", "Lorem ipsum"],
+    },
   },
 ];
 

@@ -7,7 +7,7 @@ import { CartContext } from "../../store/CartContext";
 export default function Header() {
   const cartContext = useContext(CartContext);
 
-  const  cartItemsQuantity  = cartContext?.cartItemsQuantity;
+  const cartItemsQuantity = cartContext?.cartItemsQuantity;
 
   const [isJumping, setIsJumping] = useState(false);
 
@@ -22,7 +22,7 @@ export default function Header() {
       return () => clearTimeout(timeoutId);
     }
   }, [cartItemsQuantity]);
-  
+
   return (
     <div className="header">
       <Link to="/">
@@ -35,7 +35,11 @@ export default function Header() {
         </Link>
         <Link className="link" to="/cart">
           <SvgIcon icon="cart" />
-          {cartItemsQuantity!==0 && <span className={`count ${isJumping ? 'jumping' : ''}`}>{cartItemsQuantity}</span>}
+          {cartItemsQuantity !== 0 && (
+            <span className={`count ${isJumping ? "jumping" : ""}`}>
+              {cartItemsQuantity}
+            </span>
+          )}
         </Link>
       </div>
     </div>

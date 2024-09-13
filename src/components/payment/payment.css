@@ -1,3 +1,14 @@
+@media (min-width: 768px) {
+
+  .payment .input-field-small {
+    gap: 40px;
+  }
+}
+@media (max-width: 768px) {
+  .payment .input-field-small {
+    gap: 20px;
+  }
+}
 .payment {
   padding: 0 10%;
   margin-bottom: 20px;
@@ -13,8 +24,6 @@
 .payment .input-field {
   margin-bottom: 16px;
 }
-
-.payment .input-label {}
 
 .payment .input {
   width: 100%;
@@ -51,11 +60,13 @@
 
 .payment .input-field-small {
   display: flex;
-  gap: 40px;
 }
 
 .payment .input-field-dates {
   display: flex;
   width: 70%;
   gap: 10px;
+}
+.payment .input-field-dates .input-field{
+  width: 50%;
 }

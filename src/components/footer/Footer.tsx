@@ -40,7 +40,8 @@ export default function Footer() {
             }}
             onClick={() => {
               changeLan("ru");
-            }}>
+            }}
+          >
             Рус
           </button>
           <button
@@ -51,7 +52,8 @@ export default function Footer() {
             }}
             onClick={() => {
               changeLan("en");
-            }}>
+            }}
+          >
             Eng
           </button>
         </div>

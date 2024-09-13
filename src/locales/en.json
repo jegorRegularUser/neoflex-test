@@ -2,7 +2,9 @@
   "main": {
     "headphones": "Headphones",
     "wireless": "Wireless headphones",
-    "buy": "Buy"
+    "buy": "Buy",
+    "desc" : "Description",
+    "feat" : "Features"
   },
   "footer": {
     "favorite": "Favorite",

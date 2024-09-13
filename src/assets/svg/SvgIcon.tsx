@@ -8,7 +8,7 @@ interface LogoProps {
 
 export default function SvgIcon({ width = 20, height = 20, icon }: LogoProps) {
   return (
-    <svg width={width} height={height}>
+    <svg width={width} height={height} style={{ cursor: "pointer" }}>
       {icons[icon]}
     </svg>
   );
