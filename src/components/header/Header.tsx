@@ -33,6 +33,7 @@ export default function Header() {
           <SvgIcon icon="favorite" />
           <span className="count">1</span>
         </Link>
+        <div>asd</div>
         <Link className="link" to="/cart">
           <SvgIcon icon="cart" />
           {cartItemsQuantity !== 0 && (
